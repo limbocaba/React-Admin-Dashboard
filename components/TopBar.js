@@ -108,13 +108,13 @@ export default function TopBar({ showNav, setShowNav }) {
             <Menu.Button className="inline-flex w-full justify-center items-center">
               <picture>
                 <img
-                  src="/man-smiling.jpg"
+                  src="/meta-avatar.png"
                   className="rounded-full h-8 md:mr-4 border-2 border-white shadow-sm"
                   alt="profile picture"
                 />
               </picture>
               <span className="hidden md:block font-medium text-gray-700">
-                Rettson
+                Sandy
               </span>
               <ChevronDownIcon className="ml-2 h-4 w-4 text-gray-700" />
             </Menu.Button>
@@ -145,7 +145,7 @@ export default function TopBar({ showNav, setShowNav }) {
                     className="flex hover:bg-orange-500 hover:text-white text-gray-700 rounded p-2 text-sm group transition-colors items-center"
                   >
                     <CreditCardIcon className="h-4 w-4 mr-2" />
-                    Billing
+                    Wallet
                   </Link>
                 </Menu.Item>
                 <Menu.Item>

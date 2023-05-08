@@ -1,6 +1,6 @@
 import { forwardRef } from "react";
 import Link from "next/link";
-import { HomeIcon, CreditCardIcon, UserIcon } from "@heroicons/react/24/solid";
+import { HomeIcon, CreditCardIcon, UserIcon, ChartBarIcon } from "@heroicons/react/24/solid";
 import { useRouter } from "next/router";
 
 const SideBar = forwardRef(({ showNav }, ref) => {
@@ -12,7 +12,7 @@ const SideBar = forwardRef(({ showNav }, ref) => {
         <picture>
           <img
             className="w-32 h-auto"
-            src="/ferox-transparent.png"
+            src="/ansley-logo-bg.png"
             alt="company logo"
           />
         </picture>
@@ -48,6 +48,22 @@ const SideBar = forwardRef(({ showNav }, ref) => {
             </div>
             <div>
               <p>Account</p>
+            </div>
+          </div>
+        </Link>
+        <Link href="/statistics">
+          <div
+            className={`pl-6 py-3 mx-5 rounded text-center cursor-pointer mb-3 flex items-center transition-colors ${
+              router.pathname == "/statistics"
+                ? "bg-orange-100 text-orange-500"
+                : "text-gray-400 hover:bg-orange-100 hover:text-orange-500"
+            }`}
+          >
+            <div className="mr-2">
+              <ChartBarIcon className="h-5 w-5" />
+            </div>
+            <div>
+              <p>Statistics</p>
             </div>
           </div>
         </Link>
